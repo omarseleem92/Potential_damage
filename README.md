@@ -64,7 +64,21 @@ To successfully execute the Python script, you need to provide the following inp
 
 1. **WD_raster_file**: This parameter specifies the path to the waterdepth raster file. Please ensure that you provide the full path to the raster file, including the file extension (e.g., `.tif`).It must be in 5-meter resolution, with water depth represented in centimeters, and it should share the same projection as the BEAM dataset (EPSG: 3035).
 2. **BEAM_file**: This parameter indicates the path to the BEAM dataset. Ensure that you provide the full path to the BEAM dataset directory or file.
-   ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/77e05de6-7373-4168-841f-62db0ba734b4)
+
+
+  ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/f4981a50-6098-49d7-b8ed-c1d148e6b4f5)
+
+**The Python script performs the followingtasks:**
+1. The script initially reads the water depth raster, which should adhere to specific criteria: it must be in 5-meter resolution, with water depth represented in centimeters, and it should share the same projection as the BEAM dataset. Once read, the script transforms the water depth raster into a polygon shapefile layer and subsequently dissolves it to obtain the boundary. Using the generated shapefile, the script then proceeds to clip the BEAM dataset accordingly.
+2. Additionally, it creates a raster for each land use type found within the BEAM dataset. These rasters are saved in a designated folder named "Beam_rasters_clipped." Moreover, the script identifies and extracts fixed values based on the land use category code (ln_value). These fixed values are clipped and stored in a separate folder named "Fixed_values_rasters_clipped."
+   ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/140261e8-bf70-4ed6-8eb7-26ac29088595)
+
+4. The script proceeds to compute the potential damage for each land use type. This computation relies on the water depth data and utilizes predefined damage equations, which are outlined in the table below
+   ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/161616a2-faff-448b-97c2-a803190d2558)
+
+6. Finally, the Python script sums all the calculated damage from each land use and saves them in a raster named "Sum_damage.tif".
+
+   ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/66058589-62dd-45cc-943e-df5d99346777)
 
 
 ## Example
@@ -73,4 +87,7 @@ The example folder contains a water depth file, the Python script, and the resul
 
 ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/86995303-7f9e-4ecb-a6e8-b940e76a25c9)
 
+## Reference
+1.https://www.wasserblick.net/servlet/is/219256/
+2. https://www.wasserblick.net/servlet/is/219256/20220927_Empfehlung-PFRA-Anlage.pdf
 
