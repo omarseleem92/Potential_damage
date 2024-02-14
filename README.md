@@ -86,6 +86,6 @@ The example folder contains a water depth file, the Python script, and the resul
 ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/86995303-7f9e-4ecb-a6e8-b940e76a25c9)
 
 ## Reference
-1.https://www.wasserblick.net/servlet/is/219256/
+1.https://www.wasserblick.net/servlet/is/219256
 2. https://www.wasserblick.net/servlet/is/219256/20220927_Empfehlung-PFRA-Anlage.pdf
 
