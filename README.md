@@ -35,32 +35,23 @@ To run the Python script successfully, ensure that you have installed the follow
     pip install numpy
     ```
 
-7. **rasterio.merge**: Provides functionality for merging multiple raster datasets into a single dataset.
-    ```
-    pip install rasterio
-    ```
 
-8. **rasterio.plot**: Enables visualization of raster datasets.
-    ```
-    pip install rasterio
-    ```
-
-9. **glob**: Allows for pathname pattern expansion.
+7. **glob**: Allows for pathname pattern expansion.
     ```
     pip install glob
     ```
 
-10. **os**: Provides a way of using operating system-dependent functionality.
+8. **os**: Provides a way of using operating system-dependent functionality.
     ```
     pip install os
     ```
 
-11. **shutil**: Offers high-level operations on files and collections of files.
+9. **shutil**: Offers high-level operations on files and collections of files.
     ```
     pip install shutil
     ```
 
-12. **time**: Provides various time-related functions.
+10. **time**: Provides various time-related functions.
 
 Please ensure that you have installed the required packages before running the Python script. You can install these packages using pip, a package management system for installing and managing Python packages. After installing the packages, you should be able to execute the script without any issues.
 
