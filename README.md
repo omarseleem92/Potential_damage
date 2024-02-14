@@ -67,4 +67,8 @@ To successfully execute the Python script, you need to provide the following inp
 
 ## Example
 
+The example folder contains a water depth file, the Python script, and the results obtained from running the script for a case study in Berlin. The figure below illustrates both the water depth and the calculated potential damage.
+
+![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/86995303-7f9e-4ecb-a6e8-b940e76a25c9)
+
 
