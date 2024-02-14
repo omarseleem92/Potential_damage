@@ -62,7 +62,7 @@ Please ensure that you have installed the required packages before running the P
 
 To successfully execute the Python script, you need to provide the following input parameters:
 
-1. **WD_raster_file**: This parameter specifies the path to the waterdepth raster file. Please ensure that you provide the full path to the raster file, including the file extension (e.g., `.tif`).
+1. **WD_raster_file**: This parameter specifies the path to the waterdepth raster file. Please ensure that you provide the full path to the raster file, including the file extension (e.g., `.tif`).It must be in 5-meter resolution, with water depth represented in centimeters, and it should share the same projection as the BEAM dataset (EPSG: 3035).
 2. **BEAM_file**: This parameter indicates the path to the BEAM dataset. Ensure that you provide the full path to the BEAM dataset directory or file.
 
 ## Example
