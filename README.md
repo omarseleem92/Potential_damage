@@ -66,7 +66,7 @@ To successfully execute the Python script, you need to provide the following inp
 2. **BEAM_file**: This parameter indicates the path to the BEAM dataset. Ensure that you provide the full path to the BEAM dataset directory or file.
 
 
-**The Python script performs the followingtasks:**
+## The Python script performs the followingtasks:
 1. The script initially reads the water depth raster, which should adhere to specific criteria: it must be in 5-meter resolution, with water depth represented in centimeters, and it should share the same projection as the BEAM dataset. Once read, the script transforms the water depth raster into a polygon shapefile layer and subsequently dissolves it to obtain the boundary. Using the generated shapefile, the script then proceeds to clip the BEAM dataset accordingly.
 2. Additionally, it creates a raster for each land use type found within the BEAM dataset. These rasters are saved in a designated folder named "Beam_rasters_clipped." Moreover, the script identifies and extracts fixed values based on the land use category code (ln_value). These fixed values are clipped and stored in a separate folder named "Fixed_values_rasters_clipped."
    ![image](https://github.com/omarseleem92/Potential_damage/assets/57235564/140261e8-bf70-4ed6-8eb7-26ac29088595)
